@@ -6,53 +6,63 @@
 
 
 body {
+    font-family: 'Dubai', sans-serif;
     height: 100vh;
     width: 100vw;
-    background: indianred;
-}
+    background: azure;
 
-.main {
-    /* margin: 10px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.header {
-    margin: 0 0 20px 0;
-    font-family: 'nova';
-    font-size: 2rem;
-    letter-spacing: 6px;
-    display: table;
 }
 
 .nav {
-    width: 90vw;
-    position: sticky;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: goldenrod;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-a {
-    width: inherit;
-    text-align: center;
-    font-family: 'tr larabiefont';
-    padding: 12px;
-    margin: 0;
-    font-size: 1.6rem;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    border-radius: 2px;
-    text-decoration: none;
-    color: #333;
+.nav .left {
+    font-size: 3rem;
 }
 
-a:hover {
-    color: orange;
-    padding: auto;
-    margin: 0;
-    transform: scale(1.5);
+
+.nav .right {
+    font-size: 1.8rem;
+    display: flex;
+}
+
+.nav .right-ul {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+}
+
+.nav .right-ul li {
+    padding: 0 18px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    list-style: none;
+    border-right: 2px solid black;
+}
+
+.nav .right-ul li:last-child {
     border: none;
-    transition: transform 0.2s ease-out;
+}
+
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftSection {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rightSection {
+    display: flex;
+    justify-content: flex-end;
 }
