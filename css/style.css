@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'league spartan';
+    background: linear-gradient(130deg, rgba(88, 192, 218, 0.849), rgba(255, 217, 0, 0.751));
+}
