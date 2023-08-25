@@ -13,6 +13,10 @@ body {
 
 }
 
+.img-bg {
+    background: url(../assets/web_dev.png) cover;
+}
+
 .nav {
     display: flex;
     justify-content: space-around;
@@ -53,16 +57,35 @@ body {
 
 
 .firstSection {
+    height: 60vh;
+    width: 100vw;
+    margin-top: 30px;
     display: flex;
     justify-content: space-around;
 }
 
 .leftSection {
     display: flex;
-    justify-content: flex-start;
+    width: 35vw;
+    background: #000;
+    color: white;
+}
+
+.leftSection .leftImg {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px double white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
 }
 
 .rightSection {
+    background: #000;
     display: flex;
-    justify-content: flex-end;
+    width: 35vw;
 }
