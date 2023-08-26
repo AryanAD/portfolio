@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap');
+
 /* GLOBAL */
 * {
     margin: 0;
@@ -7,7 +9,7 @@
 
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'graphik', sans-serif;
     height: 100vh;
     width: 100vw;
     background: linear-gradient(cornsilk, #BABBBB);
@@ -23,7 +25,6 @@ body {
     height: 80px;
     background-color: transparent;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-    font-family: 'graphik';
     font-weight: bold;
 }
 
@@ -45,18 +46,28 @@ body {
     justify-content: center;
 }
 
-
 .nav .right-ul li {
-    padding: 0 18px;
-    display: flex;
-    width: fit-content;
-    justify-content: center;
     list-style: none;
     border-right: 2px solid black;
 }
 
 .nav .right-ul li:last-child {
     border: none;
+}
+
+.nav .right-ul li a {
+    color: #444;
+    text-decoration: none;
+    padding: 0 18px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+}
+
+.nav .right-ul li a:hover {
+    color: #000;
+    scale: 1.1;
+    transition: scale 0.25s ease-out;
 }
 
 /* SECTIONS */
@@ -69,32 +80,31 @@ body {
 }
 
 .leftSection {
-    background: yellow;
-    border-radius: 20px 30px 90px 0;
-    display: flex;
-    width: 60vw;
-    color: tomato;
-    font-size: 5rem;
     align-items: center;
-    margin-left: 0;
+    /* background: yellow; */
+    color: black;
+    display: flex;
     flex-flow: wrap;
+    font-family: poppins, sans-serif;
+    font-size: 3rem;
+    width: 45vw;
 }
 
 .rightSection {
     display: flex;
     width: 30vw;
-    background: aqua;
+    /* background: aqua; */
 }
 
 /* 
 .rightSection img {
-
+    
 } */
 
 
 /* UTILITY */
 .name {
-    color: black;
+    color: darkblue;
 }
 
 .dev {
