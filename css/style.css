@@ -83,19 +83,12 @@ body {
     justify-content: space-around;
 }
 
-.line {
-    height: 2.6px;
-    margin: auto 90px;
-    background: brown;
-
-}
-
 .leftSection {
     align-items: center;
     color: black;
     display: flex;
     flex-flow: wrap;
-    font-family: poppins, sans-serif;
+    font-family: 'tr larabiefont', sans-serif;
     font-size: 3rem;
     width: 45vw;
 }
@@ -162,17 +155,65 @@ body {
 }
 
 
+.thirdSection {
+    border-radius: 8px 14px 60px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    height: 80vh;
+    margin: 60px auto;
+    width: 90vw;
+    background: tomato;
+}
+
 
 /* UTILITY */
+.heading {
+    font-size: 3rem;
+    padding: 0;
+    width: 20vw;
+    margin: auto;
+    font-family: 'poppins';
+}
+
+.heading .line1 {
+    width: 14vw;
+    border-radius: 20px;
+}
+
 .cursor {
     background: chocolate;
 }
 
 .name {
+    font-size: 4rem;
     color: darkblue;
 }
 
 .dev {
+    font-size: 4rem;
     font-style: italic;
     color: chocolate
+}
+
+.line {
+    height: 2.6px;
+    margin: auto 90px;
+    background: brown;
+    border-radius: 20px;
+    border: none;
+}
+
+.line1 {
+    height: 2.6px;
+    margin: auto 90px;
+    background: midnightblue;
+    border-radius: 20px;
+    border-color: midnightblue;
+}
+
+.line2 {
+    height: 2.8px;
+    margin: 2px 60px auto auto;
+    background: blue;
+    border-radius: 20px;
+    border-color: blue;
 }
