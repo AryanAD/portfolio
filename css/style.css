@@ -98,7 +98,7 @@ body {
     width: 30vw;
 }
 
-
+/* about */
 .secondSection {
     background: transparent;
     border-radius: 8px 14px 60px 0;
@@ -154,16 +154,112 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-
+/* services */
 .thirdSection {
-    border-radius: 8px 14px 60px 0;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
     height: 80vh;
     margin: 60px auto;
-    width: 90vw;
-    background: tomato;
+    width: 80vw;
 }
 
+.service-icon {
+    border-radius: 4px;
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    transform: rotate(-45deg);
+    /* width: 90px;
+    height: 90px; */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-box:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.service-box:hover .service-title,
+.service-box:hover .service-description {
+    color: white;
+    border-bottom-color: white;
+    transform: scale(1.03);
+}
+
+.service-box:hover .service-icon {
+    color: white;
+    border-color: transparent;
+    filter: invert(-100%);
+    background-color: white;
+}
+
+.service-box:hover .icon {
+    transform: rotate(45deg);
+}
+
+.icon {
+    padding: 8px;
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+}
+
+.services-container {
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: monospace;
+}
+
+.service-box {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    border-radius: 4px;
+}
+
+.service-box:first-child {
+    border-radius: 30px 4px 4px 30px;
+}
+
+.service-box:last-child {
+    border-radius: 4px 30px 30px 4px;
+}
+
+.service-title {
+    font-size: 1.6rem;
+    margin: 20px auto 0;
+    color: black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    width: 80%;
+}
+
+.service-description {
+    text-align: justify;
+    line-height: 1.8;
+    margin: 10px;
+    color: black;
+}
+
+/* contact-me */
+.cta-btn {
+    text-align: center;
+    border: transparent;
+    background: transparent;
+    outline: transparent;
+    border-radius: 12px;
+}
+
+.cta-btn:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
 
 /* UTILITY */
 .heading {
