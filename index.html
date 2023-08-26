@@ -10,6 +10,7 @@
 
     <body>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
         <div class="main">
 
             <header class="header">
@@ -35,7 +36,7 @@
                         </p>
                     </div>
                     <div class="rightSection">
-                        <img src="./assets/web_dev.png" alt="">
+                        <img src="./assets/web_dev_bg.png" alt="">
                     </div>
                 </section>
 
@@ -108,6 +109,37 @@
                     <h1 id="contact" class="heading">Contact Me</h1>
                 </button>
                 <hr class="line">
+
+                <section class="model-container" id="model">
+                    <section class="model">
+                        <button class="close-btn" id="close">x</button>
+                        <div class="model-content">
+                            <h1>Sign Up</h1>
+                            <form class="model-form">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" placeholder="Enter Your Name" class="form-input">
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" placeholder="Enter Your Email" class="form-input">
+                                </div>
+                                <div>
+                                    <label for="password">Password</label>
+                                    <input type="text" id="password" placeholder="Enter Your Password"
+                                        class="form-input">
+                                </div>
+                                <div>
+                                    <label for="password2">Confirm Password</label>
+                                    <input type="text" id="password2" placeholder="Confirm Your Password"
+                                        class="form-input">
+                                </div>
+                                <input id="sub" type="submit" value="Submit" class="submit-btn">
+                            </form>
+                        </div>
+                    </section>
+                </section>
+
 
                 <footer class="footer"></footer>
 
