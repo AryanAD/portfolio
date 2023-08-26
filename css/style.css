@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap');
 
+
 /* GLOBAL */
 * {
     margin: 0;
@@ -7,14 +8,14 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'graphik', sans-serif;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
-    background: linear-gradient(cornsilk, #BABBBB);
+    background: linear-gradient(silver, #BABBBB, cornsilk);
 
 }
+
 
 /* NAV */
 .nav {
@@ -70,13 +71,21 @@ body {
     transition: scale 0.25s ease-out;
 }
 
+
 /* SECTIONS */
 .firstSection {
-    margin: 80px auto;
+    margin: 100px auto;
     height: 60vh;
     width: 100vw;
     display: flex;
     justify-content: space-around;
+}
+
+.line {
+    height: 2.6px;
+    margin: auto 90px;
+    background: brown;
+
 }
 
 .leftSection {
@@ -96,17 +105,72 @@ body {
     /* background: aqua; */
 }
 
-/* 
-.rightSection img {
-    
-} */
 
+.secondSection {
+    background: transparent;
+    border-radius: 8px 14px 60px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    height: 80vh;
+    margin: 60px auto;
+    position: relative;
+    width: 60vw;
+}
+
+.CV {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.clip1 {
+    background: url(../assets/SKILLS.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
+    border-radius: 8px 14px 60px 0;
+}
+
+.clip2 {
+    background: url(../assets/work_edu.gif);
+    background-clip: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+    border-radius: 8px 14px 60px 0;
+}
+
+.clip3 {
+    background: url(../assets/achievements.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+    border-radius: 8px 14px 60px 0;
+}
+
+.secondSection:hover .CV {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.secondSection .CV:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
 
 /* UTILITY */
+.cursor {
+    background: chocolate;
+}
+
 .name {
     color: darkblue;
 }
 
 .dev {
-    color: fuchsia
+    font-style: italic;
+    color: chocolate
 }
