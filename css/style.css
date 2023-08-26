@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap');
 
 
+
 /* GLOBAL */
 * {
     margin: 0;
@@ -15,6 +16,7 @@ body {
     background: linear-gradient(silver, #BABBBB, cornsilk);
 
 }
+
 
 
 /* NAV */
@@ -33,7 +35,6 @@ body {
     font-size: 3rem;
     margin-left: 0;
 }
-
 
 .nav .right {
     font-style: italic;
@@ -72,6 +73,7 @@ body {
 }
 
 
+
 /* SECTIONS */
 .firstSection {
     margin: 100px auto;
@@ -90,7 +92,6 @@ body {
 
 .leftSection {
     align-items: center;
-    /* background: yellow; */
     color: black;
     display: flex;
     flex-flow: wrap;
@@ -102,7 +103,6 @@ body {
 .rightSection {
     display: flex;
     width: 30vw;
-    /* background: aqua; */
 }
 
 
@@ -160,6 +160,8 @@ body {
 .secondSection .CV:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
+
 
 /* UTILITY */
 .cursor {
