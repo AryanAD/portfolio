@@ -7,10 +7,10 @@
 
 
 body {
-    font-family: 'Dubai', sans-serif;
+    font-family: 'Nunito', sans-serif;
     height: 100vh;
     width: 100vw;
-    background: cornsilk;
+    background: linear-gradient(cornsilk, #BABBBB);
 
 }
 
@@ -23,6 +23,8 @@ body {
     height: 80px;
     background-color: transparent;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    font-family: 'graphik';
+    font-weight: bold;
 }
 
 .nav .left {
@@ -32,7 +34,7 @@ body {
 
 
 .nav .right {
-    font-family: nova;
+    font-style: italic;
     font-size: 1.8rem;
     display: flex;
 }
