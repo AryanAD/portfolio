@@ -1,21 +1,49 @@
-const loadTxt = document.querySelector(".loading-txt");
-const bg = document.querySelector(".bg");
+const typedTextSpan = document.querySelector(".typed-text");
+const cursor = document.querySelector(".cursor");
 
-let load = 0;
-let int = setInterval(blurring, 30);
+const words = [
+	"Web Developer",
+	"Graphics Designer",
+	"Web Designer",
+	"Tech Enthusiast",
+	"Student",
+];
 
-function blurring() {
-	load++;
+const typingDelay = 200;
+const erasingDelay = 200;
 
-	if (load > 99) {
-		clearInterval(int);
+// Delay between current and next text
+const newLetterDelay = 1000;
+
+let index = 0;
+let charIndex = 0;
+
+document.addEventListener("DOMContentLoaded", () => {
+	if (words.length) {
+		setTimeout(type, newLetterDelay);
 	}
+});
 
-	loadTxt.innerText = `${load}%`;
-	loadTxt.style.opacity = scale(load, 0, 100, 1, 0);
-	bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
+function type() {
+	if (charIndex < words[index].length) {
+		typedTextSpan.textContent += words[index].charAt(charIndex);
+		charIndex++;
+		setTimeout(type, typingDelay);
+	} else {
+		setTimeout(erase, newLetterDelay);
+	}
 }
 
-const scale = (num, in_min, in_max, out_min, out_max) => {
-	return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
-};
+function erase() {
+	if (charIndex > 0) {
+		typedTextSpan.textContent = words[index].substring(0, charIndex - 1);
+		charIndex--;
+		setTimeout(erase, erasingDelay);
+	} else {
+		index++;
+		if (index >= words.length) {
+			index = 0;
+		}
+		setTimeout(type, typingDelay + 1100);
+	}
+}
