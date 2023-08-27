@@ -12,10 +12,10 @@
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
     font-family: 'graphik', sans-serif;
     /* height: 100vh; */
     background: linear-gradient(75deg, silver, cornsilk, azure, cornsilk, silver);
