@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&display=swap');
-@import 'functions/ripples-functions';
-@import 'mixins/ripples-mixins';
 
 
 
@@ -87,9 +85,13 @@ body {
 
 /* SECTIONS */
 .firstSection {
+    background: #062e53;
+    padding: 40px;
     margin: 100px auto;
     height: 60vh;
-    width: 100vw;
+    width: 90vw;
+    border-radius: 60px 20px;
+    height: 70vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -124,10 +126,10 @@ body {
 
 .top-btn1,
 .top-btn2 {
-    width: 24vw;
+    width: 18vw;
     height: 8vh;
-    background: #777;
-    color: white;
+    background: linear-gradient(129deg, yellow 5%, cyan, greenyellow);
+    color: black;
     border-color: transparent;
     font-family: monospace;
     padding: 5px;
@@ -508,7 +510,7 @@ body {
 }
 
 .dev {
-    font-size: 3.6rem;
+    font-size: 4rem;
     font-style: italic;
     color: #20c20e;
 }
