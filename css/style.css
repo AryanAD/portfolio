@@ -134,7 +134,7 @@ body {
     font-family: monospace;
     padding: 5px;
     font-size: 1.4rem;
-    border-radius: 4px;
+    border-radius: 2px;
     cursor: pointer;
     font-weight: bolder;
     margin: auto;
@@ -389,7 +389,7 @@ body {
     font-family: 'cascadia code';
 }
 
-.cta-btn::before {
+/* .cta-btn::before {
     content: "<—";
     display: flex;
     align-items: center;
@@ -401,10 +401,10 @@ body {
     display: flex;
     align-items: center;
     font-size: 3rem;
-}
+} */
 
 .cta-btn:hover {
-    background: rgba(255, 177, 177, 0.4);
+    /* background: rgba(255, 177, 177, 0.4); */
     transform: scale(1.1);
     transition: transform 0.2s ease-out;
 }
