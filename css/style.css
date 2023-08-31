@@ -210,8 +210,6 @@ body {
     transform: rotateY(180deg);
     height: inherit;
     z-index: 3;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* about */
