@@ -67,7 +67,7 @@ body {
 }
 
 .nav .right-ul li a {
-    color: white;
+    color: #777;
     text-decoration: none;
     padding: 0 18px;
     display: flex;
@@ -85,7 +85,7 @@ body {
 
 /* SECTIONS */
 .firstSection {
-    background: #062e53;
+    background: linear-gradient(90deg, #062e53, rgb(95, 95, 178));
     padding: 40px;
     margin: 100px auto;
     height: 60vh;
@@ -201,8 +201,17 @@ body {
 
 .rightSection {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
     width: 30vw;
+}
+
+.rightSection img {
+    width: inherit;
+    transform: rotateY(180deg);
+    height: inherit;
+    z-index: 3;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* about */
