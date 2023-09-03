@@ -12,7 +12,7 @@ const words = [
 
 const typingDelay = 200;
 const erasingDelay = 200;
-const newLetterDelay = 2000;
+const newLetterDelay = 1000;
 
 let index = 0;
 let charIndex = 0;
@@ -43,7 +43,7 @@ function erase() {
 		if (index >= words.length) {
 			index = 0;
 		}
-		setTimeout(type, typingDelay + 1100);
+		setTimeout(type, typingDelay + 900);
 	}
 }
 
