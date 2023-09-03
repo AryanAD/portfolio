@@ -263,7 +263,7 @@ span {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: url(bg.png) center center/cover no-repeat;
+    background: url(../assets/bg.png) center center/cover no-repeat;
     font-family: 'tr larabiefont';
 }
 
@@ -596,14 +596,14 @@ span {
 .projects-body .left {
     width: 50vw;
     height: 350px;
-    background: url(portfolio.png) center center/contain no-repeat;
+    background: url(..//assets/portfolio.png) center center/contain no-repeat;
     border-radius: 13px;
 }
 
 .projects-body .left1 {
     width: 50vw;
     height: 350px;
-    background: url(sample.jpg) center center/contain no-repeat;
+    background: url(..//assets/sample.jpg) center center/contain no-repeat;
     border-radius: 13px;
 }
 
