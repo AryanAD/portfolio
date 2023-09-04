@@ -211,24 +211,106 @@ nav ul li a:hover {
 
 .thirdSection {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    margin: 10px auto;
 }
 
-.thirdSection .services .box {
+.thirdSection .services h2 {
     display: flex;
-    flex-flow: column;
+    justify-content: center;
+    font-size: 3rem;
+    position: relative;
+    color: #ff6a00;
+    padding: 5px;
+}
+
+.thirdSection .services h2:after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 3px;
+    background: #ff6a00;
+    bottom: 0;
+    border-radius: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.thirdSection .services .row {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row;
     justify-content: space-around;
     /* background: #000; */
     align-items: center;
-    width: calc(25% - 10px);
+    width: 90vw;
 }
 
-.thirdSection .services .box img {
-    width: inherit;
+.thirdSection .services .row .box {
+    height: 450px;
+    width: 400px;
+    text-align: center;
+    border-radius: 11px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.thirdSection .services .row img {
+    width: 300px;
+    border-radius: 5px;
+    margin: auto;
+    padding: auto;
+}
+
+.thirdSection .services .row h3 {
+    color: #ff6a00;
+    padding-bottom: 2px;
+    font-family: monospace;
+    font-size: 2rem;
+    padding-top: 5px;
+    border-bottom: 2px solid #ff6a00;
+}
+
+.thirdSection .services .row p {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    font-family: monospace;
+    transform: scale(1.03);
+}
+
+.thirdSection .services .row a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    color: #666;
+}
+
+.thirdSection .services .row button {
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 11px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgb(0, 0, 0, 0.2);
+}
+
+.thirdSection .services .row button:hover {
+    background: #ff6a00;
+    transform: scale(1.02);
+    color: azure;
+    transition: transform 0.4s ease;
+}
+
+.thirdSection .services .row button:hover h3,
+.thirdSection .services .row button:hover p {
+    color: azure;
+    border-color: azure;
 }
 
 /* ABOUT */
