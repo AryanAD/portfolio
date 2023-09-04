@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: whitesmoke;
+}
+
 
 
 
@@ -84,6 +88,7 @@ nav ul li a:hover {
 
 .detail a {
     background: #ff6a00;
+    letter-spacing: 2px;
     text-decoration: none;
     font-weight: bold;
     color: black;
@@ -91,15 +96,20 @@ nav ul li a:hover {
     text-transform: uppercase;
     padding: 10px 18px;
     display: inline-block;
-    margin: 30px 0;
+    margin: 30px 5px;
     border-radius: 5px;
+}
+
+.detail a:hover {
+    transform: scale(1.04);
+    transition: transform 100ms ease-out;
 }
 
 .img {
     width: 45%;
     height: 80%;
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     right: 100px;
 }
 
@@ -112,9 +122,114 @@ nav ul li a:hover {
     transition: bottom 1s, left 1s;
 }
 
+.secondSection {
+    border-top: 3px solid #ff6a00;
+    width: 100vw;
+    height: 70vh;
+    background: whitesmoke;
+    border-bottom: 3px solid #ff6a00;
+}
+
+.secondSection .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secondSection .about-img img {
+    /* background: #ff6a0030 center center/contain no-repeat; */
+    width: auto;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+}
+
+.secondSection .about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff6a00;
+    width: 65%;
+    height: 70vh;
+}
+
+.secondSection .about-text .text {
+    /* background: #000; */
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSection .about-text .text h2 {
+    border-bottom: 3px solid #000;
+    font-size: 6rem;
+    font-family: monospace;
+}
+
+.secondSection .about-text .text h5 {
+    color: hsla(0, 0%, 0%, 0.6);
+    padding-top: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: monospace;
+}
+
+.secondSection .about-text .text p {
+    padding-top: 3rem;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.11rem;
+}
+
+.secondSection .about-text .btn {
+    text-decoration: none;
+}
+
+.secondSection .about-text .btn button {
+    background: #F8DE22;
+    letter-spacing: 4px;
+    outline: none;
+    border: none;
+    border-radius: 9px;
+    font-size: 2.4rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.secondSection .about-text .btn button:hover {
+    transform: scale(1.03);
+    transition: all 200ms ease-out;
+    background: hsla(0, 0%, 0%, 0.6);
+    color: #ff6a00;
+}
 
 
+.thirdSection {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
 
+.thirdSection .services .box {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    /* background: #000; */
+    align-items: center;
+    width: calc(25% - 10px);
+}
+
+.thirdSection .services .box img {
+    width: inherit;
+}
 
 /* ABOUT */
 .about-bg {
@@ -318,7 +433,7 @@ span {
 
 .about-details .contactBTN {
     display: flex;
-    border-radius: 5px;
+    border-radius: 7px;
     background: yellow;
     padding: 5px 10px;
     font-size: 2rem;
@@ -329,8 +444,9 @@ span {
 }
 
 .about-details .contactBTN:hover {
-    transform: scale(0.9);
-    transition: transform 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background: hsla(0, 0%, 0%, 0.6);
+    color: #ff6a00;
 }
 
 .about-details a {
@@ -426,7 +542,12 @@ span {
     cursor: pointer;
     width: 200px;
     margin: 20px auto 0;
-    border-radius: 11px;
+    border-radius: 9px;
+}
+
+.contact form button:hover {
+    transform: scale(1.03);
+    transition: transform 200ms ease-out;
 }
 
 
