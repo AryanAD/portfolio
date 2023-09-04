@@ -386,6 +386,15 @@ nav ul li a:hover {
     margin: 30px 10px 0 10px;
 }
 
+.footer .footer-container .divider {
+    border-left: 6px solid tomato;
+    border-radius: 3px;
+    height: 200px;
+    position: absolute;
+    left: 65%;
+    margin-left: -3px;
+}
+
 .footer .footer-container .left {
     width: 40vw;
 }
@@ -399,7 +408,7 @@ nav ul li a:hover {
 }
 
 .footer-container .left p {
-    border-left: 3px solid black;
+    border-left: 3px solid tomato;
     border-radius: 2px;
     padding-left: 10px;
     font-family: monospace;
@@ -414,7 +423,7 @@ nav ul li a:hover {
     height: 25vh;
     justify-content: space-evenly;
     align-items: center;
-    width: 30vw;
+    width: 25vw;
     padding-left: 20px;
 }
 
@@ -425,6 +434,7 @@ nav ul li a:hover {
 
 .right a:hover {
     color: #777;
+    transform: scale(1.001);
 }
 
 .footer-container .right .contactInfo {
@@ -432,7 +442,7 @@ nav ul li a:hover {
     justify-content: flex-start;
     align-items: center;
     height: 25vh;
-    width: 30vw;
+    width: 25vw;
 }
 
 .right .contactInfo i {
@@ -451,6 +461,10 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
+
+
+
+
 
 /* ABOUT */
 .about-bg {
@@ -655,7 +669,7 @@ span {
 .about-details .contactBTN {
     display: flex;
     border-radius: 7px;
-    background: yellow;
+    background: hsl(25, 100%, 97%, 0.9);
     padding: 5px 10px;
     font-size: 2rem;
     outline: none;
