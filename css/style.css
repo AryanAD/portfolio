@@ -514,10 +514,6 @@ nav ul li {
 
 
 /* ABOUT */
-.about-html {
-    overflow: hidden;
-}
-
 .about-bg {
     background: radial-gradient(#FAD961, #F76B1C);
     width: 100%;
