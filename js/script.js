@@ -1,4 +1,28 @@
-// ABOUT-autotype
+// SCROLLBAR INDICATOR
+let indicator = document.querySelector(".scroll-indicator .progress");
+let scrollHeight =
+	document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener("scroll", scroll);
+
+function scroll() {
+	let scrollTop = document.documentElement.scrollTop;
+	let scrolled = (scrollTop / scrollHeight) * 100;
+	indicator.style.width = `${scrolled}%`;
+}
+
+// NAV-ACTIVE
+const activePage = window.location.pathname;
+console.log(window.location.href);
+console.log(activePage);
+const navLinks = document.querySelectorAll(".link").forEach((link) => {
+	console.log(link);
+	if (link.href.includes(`${activePage}`)) {
+		link.classList.add("active");
+	}
+});
+
+// ABOUT-AUTOTYPE
 const typedTextSpan = document.querySelector(".typed-text");
 
 const words = [
@@ -47,7 +71,7 @@ function erase() {
 	}
 }
 
-// EMAIL
+// SMTP (discontinued by Google)
 function sendEmail() {
 	Email.send({
 		Host: "smtp.gmail.com",
